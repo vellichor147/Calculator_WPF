@@ -28,6 +28,10 @@ namespace KalkulatorWF
             num2Debug.Text = null;
             resDebug.Text = null;
 
+            isOpDebug.Text = Convert.ToString(Program.isOperator);
+            isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
+            isSecondPrefixDebug.Text = Convert.ToString(Program.isSecondPrefix);
+            isFirstDebug.Text = Convert.ToString(Program.isFirst);
         }
 
         // Enter, delete, ','
@@ -84,6 +88,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "1";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -101,6 +106,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "2";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -119,6 +125,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "3";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -136,6 +143,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "4";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -153,6 +161,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "5";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -170,6 +179,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "6";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -187,6 +197,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "7";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -204,6 +215,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "8";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -221,6 +233,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "9";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -238,6 +251,7 @@ namespace KalkulatorWF
             {
                 Program.num1 += "0";
                 Program.isPrefix = false;
+                isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                 calculatorScreen.Text = Program.num1;
                 num1Debug.Text = Program.num1;
             }
@@ -324,6 +338,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "0";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -339,6 +354,7 @@ namespace KalkulatorWF
                 if (Program.isFirst == true && Program.isOperator == false)
                 {
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     Program.num1 += "1";
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
@@ -357,6 +373,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "2";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -373,6 +390,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "3";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -389,6 +407,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "4";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -405,6 +424,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "5";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -421,6 +441,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "6";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -437,6 +458,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "7";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -453,6 +475,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "8";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }
@@ -469,6 +492,7 @@ namespace KalkulatorWF
                 {
                     Program.num1 += "9";
                     Program.isPrefix = false;
+                    isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
                     calculatorScreen.Text = Program.num1;
                     num1Debug.Text = Program.num1;
                 }

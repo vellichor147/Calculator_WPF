@@ -55,6 +55,14 @@
             this.opDebug = new System.Windows.Forms.Label();
             this.num2Debug = new System.Windows.Forms.Label();
             this.resDebug = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.isOpDebug = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.isPrefixDebug = new System.Windows.Forms.Label();
+            this.isSecondPrefixDebug = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.isFirstDebug = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // calculatorScreen
@@ -320,13 +328,93 @@
             this.resDebug.TabIndex = 25;
             this.resDebug.Text = "label9";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 422);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "isOperator:";
+            // 
+            // isOpDebug
+            // 
+            this.isOpDebug.AutoSize = true;
+            this.isOpDebug.Location = new System.Drawing.Point(94, 422);
+            this.isOpDebug.Name = "isOpDebug";
+            this.isOpDebug.Size = new System.Drawing.Size(35, 13);
+            this.isOpDebug.TabIndex = 27;
+            this.isOpDebug.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 446);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "isPrefix:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(8, 468);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 13);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "isSecondPrefix:";
+            // 
+            // isPrefixDebug
+            // 
+            this.isPrefixDebug.AutoSize = true;
+            this.isPrefixDebug.Location = new System.Drawing.Point(94, 446);
+            this.isPrefixDebug.Name = "isPrefixDebug";
+            this.isPrefixDebug.Size = new System.Drawing.Size(41, 13);
+            this.isPrefixDebug.TabIndex = 30;
+            this.isPrefixDebug.Text = "label10";
+            // 
+            // isSecondPrefixDebug
+            // 
+            this.isSecondPrefixDebug.AutoSize = true;
+            this.isSecondPrefixDebug.Location = new System.Drawing.Point(94, 468);
+            this.isSecondPrefixDebug.Name = "isSecondPrefixDebug";
+            this.isSecondPrefixDebug.Size = new System.Drawing.Size(41, 13);
+            this.isSecondPrefixDebug.TabIndex = 31;
+            this.isSecondPrefixDebug.Text = "label11";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(9, 491);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 13);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "isFirst:";
+            // 
+            // isFirstDebug
+            // 
+            this.isFirstDebug.AutoSize = true;
+            this.isFirstDebug.Location = new System.Drawing.Point(94, 492);
+            this.isFirstDebug.Name = "isFirstDebug";
+            this.isFirstDebug.Size = new System.Drawing.Size(41, 13);
+            this.isFirstDebug.TabIndex = 33;
+            this.isFirstDebug.Text = "label13";
+            // 
             // mainWindow
             // 
             this.AcceptButton = this.enter_button;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(323, 436);
+            this.ClientSize = new System.Drawing.Size(323, 521);
+            this.Controls.Add(this.isFirstDebug);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.isSecondPrefixDebug);
+            this.Controls.Add(this.isPrefixDebug);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.isOpDebug);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.resDebug);
             this.Controls.Add(this.num2Debug);
             this.Controls.Add(this.opDebug);
@@ -395,6 +483,14 @@
         private System.Windows.Forms.Label resDebug;
 
         public int a = 3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label isOpDebug;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label isPrefixDebug;
+        private System.Windows.Forms.Label isSecondPrefixDebug;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label isFirstDebug;
     }
 }
 
