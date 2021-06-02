@@ -540,8 +540,9 @@ namespace KalkulatorWF
                 double newNum = Program.operationFunction(Program.num1, Program.num2, Program.op);
                 Program.num1 = Convert.ToString(newNum);
                 calculatorScreen.Text = Program.temp1 + " " + Program.op + " " + Program.num2 + " = " + Program.num1;
+                resDebug.Text = Program.num1;
                 num1Debug.Text = Program.num1;
-                //num1Debug.Text = null;
+
                 opDebug.Text = null;
                 num2Debug.Text = null;
 
