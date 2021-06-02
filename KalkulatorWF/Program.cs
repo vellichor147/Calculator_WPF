@@ -51,12 +51,16 @@ namespace KalkulatorWF
             return res;
         }
 
-        public static void nullVar()
+        public static void nullVariables()
         {
             num1 = null;
             num2 = null;
             op = null;
             isOperator = false;
+            isPrefix = true;
+            isSecondPrefix = true;
+            isFirst = true;
+            temp1 = null;
         }
 
         public static void test()
