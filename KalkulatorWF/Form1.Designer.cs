@@ -46,7 +46,6 @@
             this.enter_button = new System.Windows.Forms.Button();
             this.del_button = new System.Windows.Forms.Button();
             this.com_button = new System.Windows.Forms.Button();
-            this.testButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // calculatorScreen
@@ -231,16 +230,6 @@
             this.com_button.UseVisualStyleBackColor = true;
             this.com_button.Click += new System.EventHandler(this.com_button_Click);
             // 
-            // testButton
-            // 
-            this.testButton.Location = new System.Drawing.Point(203, 171);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(50, 50);
-            this.testButton.TabIndex = 17;
-            this.testButton.Text = "test";
-            this.testButton.UseVisualStyleBackColor = true;
-            this.testButton.Click += new System.EventHandler(this.testButton_Click);
-            // 
             // mainWindow
             // 
             this.AcceptButton = this.enter_button;
@@ -248,7 +237,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(323, 334);
-            this.Controls.Add(this.testButton);
             this.Controls.Add(this.com_button);
             this.Controls.Add(this.del_button);
             this.Controls.Add(this.enter_button);
@@ -297,7 +285,6 @@
         private System.Windows.Forms.Button enter_button;
         private System.Windows.Forms.Button del_button;
         private System.Windows.Forms.Button com_button;
-        private System.Windows.Forms.Button testButton;
     }
 }
 
