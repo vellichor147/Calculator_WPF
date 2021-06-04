@@ -30,12 +30,12 @@ namespace KalkulatorWF
 
             isOpDebug.Text = Convert.ToString(Program.isOperator);
             isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
-            isSecondPrefixDebug.Text = Convert.ToString(Program.isSecondPrefix);
-            isFirstDebug.Text = Convert.ToString(Program.isFirst);
+            //isSecondPrefixDebug.Text = Convert.ToString(Program.isSecondPrefix);
+            //isFirstDebug.Text = Convert.ToString(Program.isFirst);
         }
 
-        // Enter, delete, ','
-        #region Click Utility Buttons
+
+        #region Click events - Utility Buttons
         private void enter_button_Click(object sender, EventArgs e)
         {
             double newNum = Program.operationFunction(Program.num1, Program.num2, Program.op);
@@ -79,7 +79,6 @@ namespace KalkulatorWF
         }
         
         #endregion   
-
 
         #region Click Number Buttons
         private void b1_Click(object sender, EventArgs e)
@@ -265,7 +264,7 @@ namespace KalkulatorWF
 
         #endregion 
 
-        #region Click Operator Buttons
+        #region Click events - Operator Buttons
         private void add_button_Click(object sender, EventArgs e)
         {
             Program.op = "+";
@@ -314,26 +313,17 @@ namespace KalkulatorWF
         }
         #endregion
 
-        private void testButton_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("num1: " + Program.num1 + 
-                Environment.NewLine + "num2: " + Program.num2 +
-                Environment.NewLine + "op: " + Program.op);
-        }
+        #region Keys events - numbers, operators, utility
 
-        private void textBox1(object sender, EventArgs e)
-        {
-
-        }
-
-        #region Keys events
-
-        //ovo bi trebalo optimizirati!!! - pritiskom na tipku pozvati click funkciju
+        //pritiskom na tipku poziva se 'click' funkcija
         private void mainWindow_KeyPress(object sender, KeyPressEventArgs e)
         {
             #region Numpad events
             if (e.KeyChar == '0')
             {
+                b0_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "0";
@@ -348,9 +338,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '1')
             {
+                b1_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isFirst == true && Program.isOperator == false)
                 {
                     Program.isPrefix = false;
@@ -366,9 +361,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + " " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion 
             }
             else if (e.KeyChar == '2')
             {
+                b2_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "2";
@@ -383,9 +383,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion region
             }
             else if (e.KeyChar == '3')
             {
+                b3_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "3";
@@ -400,9 +405,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '4')
             {
+                b4_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "4";
@@ -417,9 +427,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '5')
             {
+                b5_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "5";
@@ -434,9 +449,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion 
             }
             else if (e.KeyChar == '6')
             {
+                b6_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "6";
@@ -451,9 +471,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '7')
             {
+                b7_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "7";
@@ -468,9 +493,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '8')
             {
+                b8_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "8";
@@ -485,9 +515,14 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '9')
             {
+                b9_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += "9";
@@ -502,21 +537,31 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "  " + Program.num2;
                     num2Debug.Text = Program.num2;
                 }
+                */
+                #endregion
             }
             #endregion
 
             #region Operator events
             if (e.KeyChar == '+')
             {
-                e.Handled = true;
+                add_button_Click(sender, e);
+                #region old code
+                /*
+                //e.Handled = true;
                 Program.op = "+";
                 Program.isOperator = true;
                 Program.isFirst = false;
                 calculatorScreen.Text = Program.num1 + " " + Program.op;
                 opDebug.Text = Program.op;
+                */
+                #endregion
             }
             else if (e.KeyChar == '-')
             {
+                sub_button_Click(sender, e);
+                #region old code
+                /*
                 //ako je prefix true a operator false to znači da niti jedan broj nije unesen i radi se o prefiksu prvog broja
                 if (Program.isPrefix == true && Program.isOperator == false)
                 {
@@ -531,6 +576,7 @@ namespace KalkulatorWF
                     calculatorScreen.Text = Program.num1 + " " + Program.op;
                     opDebug.Text = Program.op;
                     Program.isOperator = true;
+                    isOpDebug.Text = Convert.ToString(Program.isOperator);
                 }
                 //ako je operator true znači da je operator unesen i da se sljedeći minus unosi kao predznak drugog broja
                 else if (Program.isSecondPrefix == true && Program.isOperator == true)
@@ -538,20 +584,32 @@ namespace KalkulatorWF
                     Program.num2 += "-";
                     calculatorScreen.Text = Program.num1 + " " + Program.op + "   " + Program.num2;
                 }
+                */
+                #endregion
             }
             else if (e.KeyChar == '*')
             {
+                multi_button_Click(sender, e);
+                #region old code
+                /*
                 Program.op = "*";
                 Program.isOperator = true;
                 calculatorScreen.Text = Program.num1 + " " + Program.op;
                 opDebug.Text = Program.op;
+                */
+                #endregion region
             }
             else if (e.KeyChar == '/')
             {
+                div_button_Click(sender, e);
+                #region old code
+                /*
                 Program.op = "/";
                 Program.isOperator = true;
                 calculatorScreen.Text = Program.num1 + " " + Program.op;
                 opDebug.Text = Program.op;
+                */
+                #endregion
             }
 
 
@@ -561,6 +619,9 @@ namespace KalkulatorWF
             #region Utility events
             if (e.KeyChar == '=')
             {
+                enter_button_Click(sender, e);
+                #region old code
+                /*
                 double newNum = Program.operationFunction(Program.num1, Program.num2, Program.op);
                 Program.num1 = Convert.ToString(newNum);
                 calculatorScreen.Text = Program.temp1 + " " + Program.op + " " + Program.num2 + " = " + Program.num1;
@@ -574,9 +635,14 @@ namespace KalkulatorWF
                 Program.isPrefix = false;
                 Program.num2 = null;
                 Program.op = null;
+                */
+                #endregion
             }
             if (e.KeyChar == ',')
             {
+                com_button_Click(sender, e);
+                #region old code
+                /*
                 if (Program.isOperator == false)
                 {
                     Program.num1 += ",";
@@ -588,9 +654,9 @@ namespace KalkulatorWF
                     Program.num2 += ",";
                     calculatorScreen.Text = Program.num1 + " " + Program.op + " " + Program.num2;
                 }
+                */
+                #endregion
             }
-
-
             #endregion
         }
 
@@ -598,6 +664,9 @@ namespace KalkulatorWF
         {
             if(e.KeyCode == Keys.Delete)
             {
+                del_button_Click(sender, e);
+                #region old code
+                /*
                 //briše vrijednosti svih varijabli
                 Program.nullVariables();
                 calculatorScreen.Text = null;
@@ -606,9 +675,18 @@ namespace KalkulatorWF
                 opDebug.Text = null;
                 num2Debug.Text = null;
                 resDebug.Text = null;
+                */
+                #endregion
             }
         }
         #endregion
+
+
+        private void textBox1(object sender, EventArgs e)
+        {
+
+        }
+        
 
 
     }
