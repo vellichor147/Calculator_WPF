@@ -14,7 +14,7 @@ namespace KalkulatorWF
         static public bool isOperator = false;
         static public bool isPrefix = true;
         static public bool isSecondPrefix = true;
-        static public bool isFirst = true;
+        //static public bool isFirst = true;
         static public string temp1;
         [STAThread]
                
@@ -59,7 +59,7 @@ namespace KalkulatorWF
             isOperator = false;
             isPrefix = true;
             isSecondPrefix = true;
-            isFirst = true;
+            //isFirst = true;
             temp1 = null;
         }
 

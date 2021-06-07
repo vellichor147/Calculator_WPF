@@ -51,6 +51,9 @@ namespace KalkulatorWF
             Program.isPrefix = false;
             Program.num2 = null;
             Program.op = null;
+
+            isOpDebug.Text = Convert.ToString(Program.isOperator);
+            isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
         }
         private void com_button_Click(object sender, EventArgs e)
         {
@@ -76,6 +79,9 @@ namespace KalkulatorWF
             opDebug.Text = null;
             num2Debug.Text = null;
             resDebug.Text = null;
+            isOpDebug.Text = Convert.ToString(Program.isOperator);
+            isPrefixDebug.Text = Convert.ToString(Program.isPrefix);
+
         }
         
         #endregion   
@@ -83,7 +89,7 @@ namespace KalkulatorWF
         #region Click Number Buttons
         private void b1_Click(object sender, EventArgs e)
         {
-            if (Program.isFirst == true && Program.isOperator == false)
+            if (Program.isOperator == false)
             {
                 Program.num1 += "1";
                 Program.isPrefix = false;
@@ -269,7 +275,7 @@ namespace KalkulatorWF
         {
             Program.op = "+";
             Program.isOperator = true;
-            Program.isFirst = false;
+            //Program.isFirst = false;
             calculatorScreen.Text = Program.num1 + " " + Program.op;
             opDebug.Text = Program.op;
         }
